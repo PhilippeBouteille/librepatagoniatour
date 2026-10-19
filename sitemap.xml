@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://librepatagoniatour.cl/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/index.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/index.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/pt/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/index.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/programas/exploradores-y-colonos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/exploradores-y-colonos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/exploradores-y-colonos.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/exploradores-y-colonos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/exploradores-y-colonos.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/en/programs/exploradores-y-colonos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/exploradores-y-colonos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/exploradores-y-colonos.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/exploradores-y-colonos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/exploradores-y-colonos.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/pt/programas/exploradores-y-colonos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/exploradores-y-colonos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/exploradores-y-colonos.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/exploradores-y-colonos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/exploradores-y-colonos.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/programas/austral-sur.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/austral-sur.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/austral-sur.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/austral-sur.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/austral-sur.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/en/programs/austral-sur.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/austral-sur.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/austral-sur.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/austral-sur.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/austral-sur.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/pt/programas/austral-sur.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/austral-sur.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/austral-sur.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/austral-sur.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/austral-sur.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/programas/kooch.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/kooch.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/kooch.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/kooch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/kooch.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/en/programs/kooch.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/kooch.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/kooch.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/kooch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/kooch.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/pt/programas/kooch.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/kooch.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/kooch.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/kooch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/kooch.html"/>
+  </url>
+</urlset>
