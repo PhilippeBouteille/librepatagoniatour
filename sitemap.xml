@@ -231,4 +231,25 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/excursoes/cabalgatas.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/excursiones/cabalgatas.html"/>
   </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/condiciones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/condiciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/condicoes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/condiciones.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/condiciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/condicoes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/condiciones.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/pt/condicoes.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/condiciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/condicoes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/condiciones.html"/>
+  </url>
 </urlset>

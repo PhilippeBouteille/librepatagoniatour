@@ -212,3 +212,43 @@ a.ecard:hover{background:var(--cream-2);}
 .exc-cta .whatsapp-cta{margin-top:20px;}
 .exc-aside .link-u{align-self:flex-start;}
 @media (max-width:900px){.exc-body{grid-template-columns:1fr;gap:40px;}.exc-aside{position:static;}}
+
+/* ---- accordéons (Consideraciones / Bases y políticas) ---- */
+.acc-group{margin-top:48px;border-top:1px solid var(--line);}
+.acc{border-bottom:1px solid var(--line);}
+.acc summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;cursor:pointer;list-style:none;}
+.acc summary::-webkit-details-marker{display:none;}
+.exc-main .acc summary h2{margin:0;font-size:clamp(17px,1.8vw,20px);}
+.acc-icon{position:relative;width:16px;height:16px;flex-shrink:0;transition:transform .3s ease;}
+.acc-icon::before,.acc-icon::after{content:"";position:absolute;background:var(--ink);}
+.acc-icon::before{left:0;right:0;top:7px;height:2px;}
+.acc-icon::after{top:0;bottom:0;left:7px;width:2px;}
+.acc[open] .acc-icon{transform:rotate(45deg);}
+.acc-body{padding:0 0 14px;}
+.acc summary:focus-visible{outline:2px solid var(--moss);outline-offset:2px;}
+
+/* ---- page des conditions + lien de pied de page ---- */
+.terms-body{padding-top:70px;padding-bottom:100px;max-width:900px;}
+.terms-body h2:first-of-type{margin-top:36px;}
+.terms-body .link-u{margin-top:30px;}
+.foot-link{color:rgba(255,255,255,.65);text-decoration:underline;}
+.foot-link:hover{color:#fff;}
+
+/* ---- mosaïque des cartes d'excursion : photo <-> texte au survol ---- */
+.ecard{position:relative;overflow:hidden;--ph0:0;--ph:var(--ph0);--tx:calc(1 - var(--ph));}
+.ecard:nth-child(odd){--ph0:1;}
+.ecard-photo{position:absolute;inset:0;background-size:cover;background-position:center;opacity:var(--ph);transition:opacity .4s ease;pointer-events:none;}
+.ecard > *:not(.ecard-photo){position:relative;opacity:var(--tx);transition:opacity .4s ease;}
+@media (max-width:900px) and (min-width:561px){
+  .ecard:nth-child(odd){--ph0:0;}
+  .ecard:nth-child(4n+1),.ecard:nth-child(4n){--ph0:1;}
+}
+@media (hover:hover){
+  .ecard:hover,.ecard:focus-visible{--ph:calc(1 - var(--ph0));}
+  a.ecard:hover{background:var(--cream);}
+}
+@media (hover:none){
+  .ecard{--ph:0;--tx:1;}
+  .ecard-photo{position:relative;inset:auto;height:150px;opacity:1;margin:-30px -26px 6px;}
+  .ecard > *:not(.ecard-photo){opacity:1;}
+}
