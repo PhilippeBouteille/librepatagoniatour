@@ -286,3 +286,8 @@ a.ecard:hover{background:var(--cream-2);}
 .foot-logos img{height:84px;width:auto;object-fit:contain;}
 .foot-logos img[src*="sernatur"]{width:84px;}
 @media (max-width:640px){.foot-logos{gap:20px;}.foot-logos img{height:68px;}.foot-logos img[src*="sernatur"]{width:68px;}}
+
+/* pied de page : logo blanc sans cadre */
+.foot-logo{flex-shrink:0;}
+.foot-logo img{height:96px;width:auto;display:block;}
+@media (max-width:640px){.foot-logo img{height:76px;}}
