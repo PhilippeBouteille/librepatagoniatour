@@ -14,7 +14,7 @@
     var imgs = sec.querySelectorAll('.slide-img');
     var dots = sec.querySelectorAll('.dot');
     var capEl = sec.querySelector('.cap-day');
-    var n = slides.length;
+    var n = Math.max(slides.length, imgs.length);
     var cur = 0;
 
     function render(){
