@@ -234,7 +234,7 @@ a.ecard:hover{background:var(--cream-2);}
 .foot-link{color:rgba(255,255,255,.65);text-decoration:underline;}
 .foot-link:hover{color:#fff;}
 
-/* ---- mosaïque des cartes d'excursion : photo <-> texte au survol ---- */
+/* ---- mosaïque des cartes d'excursion : photo seule ou texte seul au repos, photo + texte au survol ---- */
 .ecard{position:relative;overflow:hidden;--ph0:0;--ph:var(--ph0);--tx:calc(1 - var(--ph));}
 .ecard:nth-child(odd){--ph0:1;}
 .ecard-photo{position:absolute;inset:0;background-size:cover;background-position:center;opacity:var(--ph);transition:opacity .4s ease;pointer-events:none;}
@@ -243,9 +243,15 @@ a.ecard:hover{background:var(--cream-2);}
   .ecard:nth-child(odd){--ph0:0;}
   .ecard:nth-child(4n+1),.ecard:nth-child(4n){--ph0:1;}
 }
+/* survol : la photo et le texte sont affichés ensemble (texte blanc sur voile sombre) */
+.ecard-photo::after{content:"";position:absolute;inset:0;background:rgba(18,20,16,.7);opacity:var(--ov,0);transition:opacity .4s ease;}
+.ecard h3,.ecard p,.ecard .edur,.ecard .eprice,.ecard .eprice span,.ecard .ecard-more,.ecard .icon{transition:color .4s ease,border-color .4s ease;}
 @media (hover:hover){
-  .ecard:hover,.ecard:focus-visible{--ph:calc(1 - var(--ph0));}
+  .ecard:hover,.ecard:focus-visible{--ph:1;--tx:1;--ov:1;}
   a.ecard:hover{background:var(--cream);}
+  .ecard:hover h3,.ecard:hover p,.ecard:hover .edur,.ecard:hover .eprice,.ecard:hover .eprice span,.ecard:hover .ecard-more,.ecard:hover .icon,
+  .ecard:focus-visible h3,.ecard:focus-visible p,.ecard:focus-visible .edur,.ecard:focus-visible .eprice,.ecard:focus-visible .eprice span,.ecard:focus-visible .ecard-more,.ecard:focus-visible .icon{color:#fff;}
+  .ecard:hover .eprice,.ecard:focus-visible .eprice{border-top-color:rgba(255,255,255,.35);}
 }
 @media (hover:none){
   .ecard{--ph:0;--tx:1;}
