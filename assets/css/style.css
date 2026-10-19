@@ -291,3 +291,8 @@ a.ecard:hover{background:var(--cream-2);}
 .foot-logo{flex-shrink:0;}
 .foot-logo img{height:96px;width:auto;display:block;}
 @media (max-width:640px){.foot-logo img{height:76px;}}
+
+/* nav : logo blanc sans cadre */
+.logo-nav{flex-shrink:0;display:flex;align-items:center;}
+.logo-nav img{height:60px;width:auto;display:block;}
+@media (max-width:640px){.logo-nav img{height:50px;}}
