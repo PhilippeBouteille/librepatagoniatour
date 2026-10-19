@@ -257,3 +257,8 @@ a.ecard:hover{background:var(--cream-2);}
 @media (max-width:640px){.prog-detail,.itinerary,.specs,.pricing{padding-left:20px;padding-right:20px;}}
 @media (max-width:1240px){.page-hero-inner{padding-left:32px;padding-right:32px;}}
 @media (max-width:640px){.page-hero-inner{padding-left:20px;padding-right:20px;}}
+
+/* programmes : Incluye / No incluye en accordéon */
+.specs .acc-group{margin-top:0;}
+.specs .acc summary h2{margin:0;font-size:clamp(17px,1.8vw,20px);}
+.specs .acc-body li:first-child{border-top:0;}
