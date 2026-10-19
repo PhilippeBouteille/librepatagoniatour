@@ -284,5 +284,5 @@ a.ecard:hover{background:var(--cream-2);}
 .foot-logos a{display:inline-flex;opacity:.85;transition:opacity .25s ease;}
 .foot-logos a:hover{opacity:1;}
 .foot-logos img{height:84px;width:auto;object-fit:contain;}
-.foot-logos img[src*="sernatur"]{border-radius:50%;width:84px;object-fit:cover;}
+.foot-logos img[src*="sernatur"]{width:84px;}
 @media (max-width:640px){.foot-logos{gap:20px;}.foot-logos img{height:68px;}.foot-logos img[src*="sernatur"]{width:68px;}}
