@@ -278,3 +278,11 @@ a.ecard:hover{background:var(--cream-2);}
 .foot-col .foot-social a{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;margin:0;border:1px solid rgba(255,255,255,.3);border-radius:50%;color:rgba(255,255,255,.85);transition:background .25s ease,color .25s ease,border-color .25s ease;}
 .foot-col .foot-social a:hover,.foot-col .foot-social a:focus-visible{background:#fff;color:var(--ink);border-color:#fff;}
 .foot-social svg{width:19px;height:19px;}
+
+/* pied de page : logos Ruta de los Parques + SERNATUR */
+.foot-logos{display:flex;align-items:center;gap:26px;}
+.foot-logos a{display:inline-flex;opacity:.85;transition:opacity .25s ease;}
+.foot-logos a:hover{opacity:1;}
+.foot-logos img{height:84px;width:auto;object-fit:contain;}
+.foot-logos img[src*="sernatur"]{border-radius:50%;width:84px;object-fit:cover;}
+@media (max-width:640px){.foot-logos{gap:20px;}.foot-logos img{height:68px;}.foot-logos img[src*="sernatur"]{width:68px;}}
