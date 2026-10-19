@@ -298,3 +298,5 @@ a.ecard:hover{background:var(--cream-2);}
 @media (max-width:640px){.logo-nav img{height:50px;}}
 .foot-brand{align-items:center;}
 .foot-brand h2{margin-bottom:0;}
+/* logo couleur sur nav sombre : léger halo blanc pour garder le texte noir lisible */
+.logo-nav img{filter:drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff);}
