@@ -272,3 +272,9 @@ a.ecard:hover{background:var(--cream-2);}
 
 /* cartes programmes sans prix : espace avant les liens */
 .prog-duration + .chap-links{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);}
+
+/* pied de page : réseaux sociaux en icônes */
+.foot-col .foot-social{display:flex;gap:14px;align-items:center;}
+.foot-col .foot-social a{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;margin:0;border:1px solid rgba(255,255,255,.3);border-radius:50%;color:rgba(255,255,255,.85);transition:background .25s ease,color .25s ease,border-color .25s ease;}
+.foot-col .foot-social a:hover,.foot-col .foot-social a:focus-visible{background:#fff;color:var(--ink);border-color:#fff;}
+.foot-social svg{width:19px;height:19px;}
