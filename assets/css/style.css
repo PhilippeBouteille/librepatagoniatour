@@ -300,3 +300,9 @@ a.ecard:hover{background:var(--cream-2);}
 @media (max-width:640px){.logo-nav img{height:50px;}}
 .foot-brand{align-items:center;}
 .foot-brand h2{margin-bottom:0;}
+
+/* Accueil : alternance des cartes de programmes (photo a gauche pour le n2) */
+@media (min-width:901px){
+  #austral-sur .program-row{grid-template-columns:1.05fr .95fr;}
+  #austral-sur .program-media{order:-1;}
+}
