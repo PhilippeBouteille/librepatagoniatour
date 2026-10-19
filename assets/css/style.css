@@ -188,3 +188,27 @@ footer{background:var(--ink);color:#EDE8DC;padding:76px 0 36px;}
 .cookie-settings-link{color:rgba(255,255,255,.65);text-decoration:underline;}
 .cookie-settings-link:hover{color:#fff;}
 @media (max-width:640px){#cookie-banner{flex-direction:column;align-items:stretch;gap:14px;}.cookie-actions{justify-content:flex-end;}}
+
+/* ---- excursion cards (liens) + pages d'excursion ---- */
+a.ecard{color:inherit;transition:background .25s ease;}
+a.ecard:hover{background:var(--cream-2);}
+.ecard-more{font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:500;color:var(--moss);margin-top:4px;}
+.exc-hero{background:var(--ink);color:#fff;padding:150px 0 56px;}
+.exc-hero .eyebrow{color:rgba(255,255,255,.7);display:block;}
+.exc-hero h1{color:#fff;font-size:clamp(28px,4.2vw,46px);margin:14px 0 8px;}
+.exc-meta{color:rgba(255,255,255,.85);font-size:14px;}
+.exc-body{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:64px;padding-top:70px;padding-bottom:100px;align-items:start;}
+.exc-intro{font-size:17px;color:var(--ink);margin:0 0 6px;}
+.exc-main h2{font-size:clamp(20px,2.2vw,26px);margin:44px 0 14px;}
+.exc-main p{color:var(--ink-soft);font-size:15px;margin:0 0 14px;}
+.exc-main ul{margin:0 0 14px;padding-left:20px;color:var(--ink-soft);font-size:15px;}
+.exc-main li{margin-bottom:8px;}
+.exc-main .exc-pol{font-size:13.5px;}
+.exc-aside{position:sticky;top:90px;display:flex;flex-direction:column;gap:22px;}
+.exc-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px;}
+.exc-cta{background:var(--cream-2);padding:26px;}
+.exc-cta h3{font-size:18px;margin-bottom:8px;}
+.exc-cta p{color:var(--ink-soft);font-size:14px;margin:0;}
+.exc-cta .whatsapp-cta{margin-top:20px;}
+.exc-aside .link-u{align-self:flex-start;}
+@media (max-width:900px){.exc-body{grid-template-columns:1fr;gap:40px;}.exc-aside{position:static;}}
