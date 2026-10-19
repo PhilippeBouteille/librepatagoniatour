@@ -161,7 +161,7 @@ nav a.nav-cta:hover,nav a.nav-cta:focus-visible{background:#fff;color:var(--ink)
 .price-cell{background:var(--cream);padding:30px 24px;text-align:center;}
 .price-cell .pax{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px;}
 .price-cell .amount{font-family:'Montserrat',sans-serif;font-size:28px;}
-.price-note{font-size:13px;color:var(--ink-soft);max-width:600px;}
+.price-note{font-size:13px;color:var(--ink-soft);max-width:none;}
 .whatsapp-cta{display:inline-flex;align-items:center;gap:10px;background:var(--moss);color:#fff;padding:16px 28px;border-radius:3px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-weight:500;margin-top:30px;}
 .whatsapp-cta:hover{background:#45533f;}
 @media (max-width:640px){.price-table{grid-template-columns:1fr;}}
