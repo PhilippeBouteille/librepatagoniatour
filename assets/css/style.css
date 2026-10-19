@@ -262,3 +262,6 @@ a.ecard:hover{background:var(--cream-2);}
 .specs .acc-group{margin-top:0;}
 .specs .acc summary h2{margin:0;font-size:clamp(17px,1.8vw,20px);}
 .specs .acc-body li:first-child{border-top:0;}
+
+/* cartes programmes sans prix : espace avant les liens */
+.slides-wrap + .chap-links{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);}
