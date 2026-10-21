@@ -103,6 +103,8 @@ nav a.nav-cta:hover,nav a.nav-cta:focus-visible{background:#fff;color:var(--ink)
 /* petite galerie sous le titre des excursions */
 .exc-strip .gallery-strip{margin:44px 0 0;}
 .exc-strip .gallery-strip img{height:220px;}
+.exc-strip .gallery-strip.s3{grid-template-columns:repeat(3,1fr);}
+@media (max-width:760px){.exc-strip .gallery-strip.s3 img{height:150px;}}
 
 @media (max-width:900px){
   .program-row{grid-template-columns:1fr;min-height:0;}

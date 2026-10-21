@@ -190,6 +190,27 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/excursiones/queulat-termas-ventisquero.html"/>
   </url>
   <url>
+    <loc>https://librepatagoniatour.cl/excursiones/cerro-castillo.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/excursiones/cerro-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/excursions/cerro-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/excursoes/cerro-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/excursiones/cerro-castillo.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/en/excursions/cerro-castillo.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/excursiones/cerro-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/excursions/cerro-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/excursoes/cerro-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/excursiones/cerro-castillo.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/pt/excursoes/cerro-castillo.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/excursiones/cerro-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/excursions/cerro-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/excursoes/cerro-castillo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/excursiones/cerro-castillo.html"/>
+  </url>
+  <url>
     <loc>https://librepatagoniatour.cl/excursiones/termas-ensenada-perez.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/excursiones/termas-ensenada-perez.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/excursions/termas-ensenada-perez.html"/>
