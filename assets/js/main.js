@@ -36,26 +36,18 @@
     dots.forEach(function(d){ d.addEventListener('click', function(){ go(parseInt(d.getAttribute('data-goto'),10)); }); });
     render();
   });
-  // galerie faune et paysages (accueil)
+  // galerie faune et paysages (accueil) : vitesse constante quelle que soit la largeur de la bande
   (function(){
-    var g = document.querySelector('.gallery');
-    if (!g) return;
-    var track = g.querySelector('.gallery-track');
-    var prev = g.querySelector('.arrow.prev');
-    var next = g.querySelector('.arrow.next');
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    function update(){
-      var max = track.scrollWidth - track.clientWidth - 2;
-      prev.disabled = track.scrollLeft <= 2;
-      next.disabled = track.scrollLeft >= max;
+    var track = document.querySelector('.gallery-track');
+    if (!track) return;
+    function speed(){
+      var px = window.innerWidth <= 640 ? 45 : 60;
+      track.style.animationDuration = Math.round(track.scrollWidth / 2 / px) + 's';
     }
-    function step(dir){ track.scrollBy({ left: dir * track.clientWidth * 0.8, behavior: reduce ? 'auto' : 'smooth' }); }
-    prev.addEventListener('click', function(){ step(-1); });
-    next.addEventListener('click', function(){ step(1); });
-    track.addEventListener('scroll', update, { passive: true });
-    window.addEventListener('resize', update);
-    track.querySelectorAll('img').forEach(function(im){ im.addEventListener('load', update); });
-    update();
+    speed();
+    window.addEventListener('resize', speed);
+    window.addEventListener('load', speed);
+    track.querySelectorAll('img').forEach(function(im){ im.addEventListener('load', speed); });
   })();
   // menu hamburger
   (function(){

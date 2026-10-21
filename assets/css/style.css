@@ -338,12 +338,12 @@ a.ecard:hover{background:var(--cream-2);}
 @media (min-width:641px){.price-table.price-table--2{grid-template-columns:repeat(2,1fr);}}
 .price-cell .usd{display:block;margin-top:8px;font-size:14px;color:var(--ink-soft);}
 
-/* ---- galerie faune et paysages (accueil) ---- */
-.gallery{background:var(--ink);padding:26px 0;}
-.gallery-wrap{position:relative;}
-.gallery-track{display:flex;gap:12px;height:clamp(240px,34vw,440px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:0 32px;scroll-padding:0 32px;outline-offset:-3px;}
-.gallery-track::-webkit-scrollbar{display:none;}
-.gallery-track img{flex:0 0 auto;height:100%;width:auto;max-width:none;scroll-snap-align:start;background:#111;}
-.gallery .arrow{z-index:2;}
-.gallery .arrow[disabled]{opacity:0;pointer-events:none;}
-@media (max-width:640px){.gallery{padding:18px 0;}.gallery-track{padding:0 20px;scroll-padding:0 20px;gap:8px;}.gallery .arrow{display:none;}}
+/* ---- galerie faune et paysages (accueil) : défilement continu ---- */
+.gallery{background:var(--ink);padding:26px 0;overflow:hidden;}
+.gallery-track{display:flex;width:max-content;height:clamp(240px,34vw,440px);animation:gal-scroll 200s linear infinite;will-change:transform;}
+.gallery-set{display:flex;flex:0 0 auto;height:100%;}
+.gallery-set img{flex:0 0 auto;height:100%;width:auto;max-width:none;margin-right:12px;background:#111;}
+@keyframes gal-scroll{from{transform:translate3d(0,0,0);}to{transform:translate3d(-50%,0,0);}}
+@media (hover:hover){.gallery:hover .gallery-track{animation-play-state:paused;}}
+@media (max-width:640px){.gallery{padding:18px 0;}.gallery-set img{margin-right:8px;}}
+@media (prefers-reduced-motion:reduce){.gallery{overflow-x:auto;}.gallery-track{animation:none;}.gallery-set + .gallery-set{display:none;}}
