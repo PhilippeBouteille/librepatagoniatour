@@ -329,3 +329,11 @@ a.ecard:hover{background:var(--cream-2);}
 .hero-season{margin:14px 0 0;font-size:13px;letter-spacing:.03em;color:rgba(255,255,255,.9);font-style:italic;}
 .price-cta-text{margin:0 0 18px;font-size:14px;color:var(--ink-soft);}
 #programas{scroll-margin-top:84px;}
+
+/* Programme 4 : carte d'accueil (photo a gauche, alternance) et tarifs a 2 cellules */
+@media (min-width:901px){
+  #capillas-tortel-patagonia .program-row{grid-template-columns:.95fr 1.05fr;}
+  #capillas-tortel-patagonia .program-media{order:-1;}
+}
+@media (min-width:641px){.price-table.price-table--2{grid-template-columns:repeat(2,1fr);}}
+.price-cell .usd{display:block;margin-top:8px;font-size:14px;color:var(--ink-soft);}

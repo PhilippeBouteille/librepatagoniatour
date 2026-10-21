@@ -85,6 +85,27 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/kooch.html"/>
   </url>
   <url>
+    <loc>https://librepatagoniatour.cl/programas/capillas-tortel-patagonia.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/capillas-tortel-patagonia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/capillas-tortel-patagonia.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/capillas-tortel-patagonia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/capillas-tortel-patagonia.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/en/programs/capillas-tortel-patagonia.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/capillas-tortel-patagonia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/capillas-tortel-patagonia.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/capillas-tortel-patagonia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/capillas-tortel-patagonia.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/pt/programas/capillas-tortel-patagonia.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/programas/capillas-tortel-patagonia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/programs/capillas-tortel-patagonia.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/programas/capillas-tortel-patagonia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/programas/capillas-tortel-patagonia.html"/>
+  </url>
+  <url>
     <loc>https://librepatagoniatour.cl/excursiones/capillas-de-marmol.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/excursiones/capillas-de-marmol.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/excursions/capillas-de-marmol.html"/>
