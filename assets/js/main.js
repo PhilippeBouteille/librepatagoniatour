@@ -36,6 +36,27 @@
     dots.forEach(function(d){ d.addEventListener('click', function(){ go(parseInt(d.getAttribute('data-goto'),10)); }); });
     render();
   });
+  // galerie faune et paysages (accueil)
+  (function(){
+    var g = document.querySelector('.gallery');
+    if (!g) return;
+    var track = g.querySelector('.gallery-track');
+    var prev = g.querySelector('.arrow.prev');
+    var next = g.querySelector('.arrow.next');
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function update(){
+      var max = track.scrollWidth - track.clientWidth - 2;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max;
+    }
+    function step(dir){ track.scrollBy({ left: dir * track.clientWidth * 0.8, behavior: reduce ? 'auto' : 'smooth' }); }
+    prev.addEventListener('click', function(){ step(-1); });
+    next.addEventListener('click', function(){ step(1); });
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    track.querySelectorAll('img').forEach(function(im){ im.addEventListener('load', update); });
+    update();
+  })();
   // menu hamburger
   (function(){
     var btn = document.querySelector('.nav-toggle');
