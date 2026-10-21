@@ -169,6 +169,27 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/excursiones/parque-nacional-queulat.html"/>
   </url>
   <url>
+    <loc>https://librepatagoniatour.cl/excursiones/queulat-termas-ventisquero.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/excursiones/queulat-termas-ventisquero.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/excursions/queulat-termas-ventisquero.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/excursoes/queulat-termas-ventisquero.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/excursiones/queulat-termas-ventisquero.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/en/excursions/queulat-termas-ventisquero.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/excursiones/queulat-termas-ventisquero.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/excursions/queulat-termas-ventisquero.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/excursoes/queulat-termas-ventisquero.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/excursiones/queulat-termas-ventisquero.html"/>
+  </url>
+  <url>
+    <loc>https://librepatagoniatour.cl/pt/excursoes/queulat-termas-ventisquero.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/excursiones/queulat-termas-ventisquero.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/excursions/queulat-termas-ventisquero.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/excursoes/queulat-termas-ventisquero.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/excursiones/queulat-termas-ventisquero.html"/>
+  </url>
+  <url>
     <loc>https://librepatagoniatour.cl/excursiones/termas-ensenada-perez.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://librepatagoniatour.cl/excursiones/termas-ensenada-perez.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/excursions/termas-ensenada-perez.html"/>
