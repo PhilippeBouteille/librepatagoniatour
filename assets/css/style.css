@@ -98,6 +98,12 @@ nav a.nav-cta:hover,nav a.nav-cta:focus-visible{background:#fff;color:var(--ink)
 .dots{position:absolute;right:20px;top:20px;z-index:3;display:flex;gap:7px;}
 .dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);border:none;cursor:pointer;padding:0;}
 .dot.active{background:#fff;}
+/* photo des cartes de programmes cliquable (sous les fleches et les points) */
+.media-link{position:absolute;inset:0;z-index:2;}
+/* petite galerie sous le titre des excursions */
+.exc-strip .gallery-strip{margin:44px 0 0;}
+.exc-strip .gallery-strip img{height:220px;}
+
 @media (max-width:900px){
   .program-row{grid-template-columns:1fr;min-height:0;}
   .program-text{padding:48px 26px 36px;}
