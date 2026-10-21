@@ -351,11 +351,10 @@ a.ecard:hover{background:var(--cream-2);}
 .price-cell .usd{display:block;margin-top:8px;font-size:14px;color:var(--ink-soft);}
 
 /* ---- galerie faune et paysages (accueil) : défilement continu ---- */
-.gallery{background:var(--ink);padding:26px 0;overflow:hidden;}
-.gallery-track{display:flex;width:max-content;height:clamp(240px,34vw,440px);animation:gal-scroll 200s linear infinite;will-change:transform;}
+.gallery{background:var(--ink);padding:26px 0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;overscroll-behavior-x:contain;cursor:grab;}
+.gallery::-webkit-scrollbar{display:none;}
+.gallery.dragging{cursor:grabbing;}
+.gallery-track{display:flex;width:max-content;height:clamp(240px,34vw,440px);}
 .gallery-set{display:flex;flex:0 0 auto;height:100%;}
-.gallery-set img{flex:0 0 auto;height:100%;width:auto;max-width:none;margin-right:12px;background:#111;}
-@keyframes gal-scroll{from{transform:translate3d(0,0,0);}to{transform:translate3d(-50%,0,0);}}
-@media (hover:hover){.gallery:hover .gallery-track{animation-play-state:paused;}}
+.gallery-set img{flex:0 0 auto;height:100%;width:auto;max-width:none;margin-right:12px;background:#111;-webkit-user-drag:none;user-select:none;}
 @media (max-width:640px){.gallery{padding:18px 0;}.gallery-set img{margin-right:8px;}}
-@media (prefers-reduced-motion:reduce){.gallery{overflow-x:auto;}.gallery-track{animation:none;}.gallery-set + .gallery-set{display:none;}}
