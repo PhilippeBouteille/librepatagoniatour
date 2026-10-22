@@ -339,12 +339,17 @@ a.ecard:hover{background:var(--cream-2);}
 /* ---- message de saison (accueil et pages de programmes) ---- */
 .season-note{text-align:center;font-size:14px;letter-spacing:.03em;color:var(--ink-soft);margin:0;padding:34px 20px 24px;}
 .hero-season{margin:14px 0 0;font-size:13px;letter-spacing:.03em;color:rgba(255,255,255,.9);font-style:italic;}
-/* fil d'Ariane (pages de programme et d'excursion) : div, pas nav, pour ne pas hériter de "nav a" */
-.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:2px 9px;margin-top:20px;font-size:12px;letter-spacing:.04em;line-height:1.5;color:rgba(255,255,255,.72);text-shadow:0 1px 10px rgba(0,0,0,.55);}
-.crumbs a{color:rgba(255,255,255,.72);border-bottom:1px solid transparent;transition:color .2s ease,border-color .2s ease;}
-.crumbs a:hover{color:#fff;border-bottom-color:rgba(255,255,255,.6);}
+/* fil d'Ariane (pages de programme et d'excursion), juste sous le hero sur le fond crème : div, pas nav, pour ne pas hériter de "nav a" */
+.crumbs-wrap{padding-top:16px;}
+/* pages de programme : même cadrage latéral que .prog-detail et .page-hero-inner */
+.crumbs-wrap--prog{padding-left:0;padding-right:0;}
+@media (max-width:1240px){.crumbs-wrap--prog{padding-left:32px;padding-right:32px;}}
+@media (max-width:640px){.crumbs-wrap--prog{padding-left:20px;padding-right:20px;}}
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:2px 9px;font-size:12px;letter-spacing:.04em;line-height:1.5;color:var(--ink-soft);}
+.crumbs a{color:var(--ink-soft);border-bottom:1px solid transparent;transition:color .2s ease,border-color .2s ease;}
+.crumbs a:hover{color:var(--ink);border-bottom-color:var(--ink-soft);}
 .crumbs .sep{opacity:.5;}
-.crumbs [aria-current]{color:rgba(255,255,255,.92);}
+.crumbs [aria-current]{color:var(--ink);}
 @media (max-width:640px){.crumbs [aria-current],.crumbs .sep:nth-last-child(2){display:none;}}
 .price-cta-text{margin:0 0 18px;font-size:14px;color:var(--ink-soft);}
 #programas{scroll-margin-top:84px;}
