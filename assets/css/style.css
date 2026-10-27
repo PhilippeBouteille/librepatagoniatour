@@ -370,3 +370,17 @@ a.ecard:hover{background:var(--cream-2);}
 .gallery-set{display:flex;flex:0 0 auto;height:100%;}
 .gallery-set img{flex:0 0 auto;height:100%;width:auto;max-width:none;margin-right:12px;background:#111;-webkit-user-drag:none;user-select:none;}
 @media (max-width:640px){.gallery{padding:18px 0;}.gallery-set img{margin-right:8px;}}
+
+/* Video (accueil, au-dessus du pied de page) : le lecteur YouTube ne se charge qu'au clic */
+.video-section{background:var(--cream-2);padding:90px 0 80px;}
+.video-section .section-head{margin-bottom:38px;}
+.video-frame{position:relative;aspect-ratio:16/9;max-width:1040px;margin:0 auto;background:#000;overflow:hidden;border-radius:2px;}
+.video-frame img,.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;object-fit:cover;}
+.video-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,20,16,.10),rgba(14,16,13,.36));pointer-events:none;}
+.video-frame:has(iframe)::after{display:none;}
+.video-play{position:absolute;z-index:2;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;border:1.5px solid rgba(255,255,255,.9);background:rgba(20,20,18,.28);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s ease,color .25s ease,transform .25s ease;}
+.video-play svg{width:34px;height:34px;margin-left:4px;}
+.video-play:hover,.video-play:focus-visible{background:#fff;color:var(--ink);transform:scale(1.06);}
+.video-play:focus-visible{outline:2px solid #fff;outline-offset:4px;}
+.video-note{text-align:center;font-size:12px;color:var(--ink-soft);margin:14px 0 0;}
+@media (max-width:640px){.video-section{padding:64px 0 56px;}.video-play{width:62px;height:62px;margin:-31px 0 0 -31px;}.video-play svg{width:26px;height:26px;}}

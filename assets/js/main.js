@@ -126,4 +126,19 @@
     document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setOpen(false); });
     window.addEventListener('resize', function(){ if (window.innerWidth > 860) setOpen(false); });
   })();
+  // video d'accueil : le lecteur YouTube (youtube-nocookie) ne se charge qu'au clic
+  document.querySelectorAll('.video-frame').forEach(function(box){
+    var btn = box.querySelector('.video-play');
+    if (!btn) return;
+    btn.addEventListener('click', function(){
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + box.getAttribute('data-yt-id') + '?autoplay=1&rel=0&playsinline=1&hl=' + (box.getAttribute('data-yt-lang') || 'es');
+      f.title = box.getAttribute('data-yt-title') || '';
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.setAttribute('allowfullscreen', '');
+      box.innerHTML = '';
+      box.appendChild(f);
+      f.focus();
+    });
+  });
 })();
