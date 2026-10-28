@@ -389,3 +389,16 @@ a.ecard:hover{background:var(--cream-2);}
 .hero-slide{position:absolute;inset:0;background-size:cover;background-repeat:no-repeat;opacity:0;transition:opacity 1.8s ease;}
 .hero-slide.is-active{opacity:1;}
 @media (prefers-reduced-motion:reduce){.hero-slide{transition:none;}}
+
+/* pastilles du carrousel du hero d'accueil */
+.hero-dots{position:absolute;left:0;right:0;bottom:26px;z-index:2;display:flex;justify-content:center;gap:2px;}
+.hero-dot{width:26px;height:26px;padding:0;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.hero-dot::before{content:"";width:10px;height:10px;border-radius:50%;border:1.5px solid rgba(255,255,255,.9);background:transparent;box-sizing:border-box;transition:background .25s,transform .25s;}
+.hero-dot:hover::before{background:rgba(255,255,255,.55);}
+.hero-dot[aria-current="true"]::before{background:#fff;transform:scale(1.15);}
+.hero-dot:focus-visible{outline:2px solid #fff;outline-offset:-2px;border-radius:50%;}
+@media (max-width:640px){.hero-dots{bottom:20px;}}
+/* tant que le bandeau cookies est affiché, les pastilles passent au-dessus pour rester cliquables */
+.hero-dots{transition:bottom .3s ease;}
+body:has(#cookie-banner) .hero-dots{bottom:132px;}
+@media (max-width:640px){body:has(#cookie-banner) .hero-dots{bottom:222px;}}

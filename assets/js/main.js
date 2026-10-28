@@ -126,12 +126,29 @@
     document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setOpen(false); });
     window.addEventListener('resize', function(){ if (window.innerWidth > 860) setOpen(false); });
   })();
-  // hero d'accueil : carrousel en fondu enchaîné ; la première image est dans le HTML, les autres se chargent ensuite
+  // hero d'accueil : carrousel en fondu enchaîné + pastilles ; la première image est dans le HTML, les autres se chargent à la demande
   (function(){
     var slides = Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
     if (slides.length < 2) return;
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    var cur = 0, timer = null, DELAY = 6500;
+    var hero = slides[0].closest('.hero');
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var cur = 0, timer = null, req = 0, DELAY = 6500;
+    var en = (document.documentElement.lang || 'es').slice(0, 2) === 'en';
+    var nav = document.createElement('div');
+    nav.className = 'hero-dots';
+    nav.setAttribute('role', 'group');
+    nav.setAttribute('aria-label', en ? 'Hero photos' : 'Fotos de portada');
+    var dots = slides.map(function(_, i){
+      var d = document.createElement('button');
+      d.type = 'button';
+      d.className = 'hero-dot';
+      d.setAttribute('aria-label', (en ? 'Photo ' + (i + 1) + ' of ' : 'Foto ' + (i + 1) + ' de ') + slides.length);
+      if (i === 0) d.setAttribute('aria-current', 'true');
+      d.addEventListener('click', function(){ show(i); schedule(); });
+      nav.appendChild(d);
+      return d;
+    });
+    hero.appendChild(nav);
     function load(slide, cb){
       var src = slide.getAttribute('data-bg');
       if (!src) { cb(); return; }
@@ -140,17 +157,25 @@
       im.onerror = function(){ cb(true); };
       im.src = src;
     }
-    function next(){
-      var n = (cur + 1) % slides.length;
+    function show(n){
+      if (n === cur) return;
+      var my = ++req;
       load(slides[n], function(err){
-        if (!err) { slides[cur].classList.remove('is-active'); slides[n].classList.add('is-active'); cur = n; }
-        schedule();
+        if (err || my !== req) return;
+        slides[cur].classList.remove('is-active');
+        dots[cur].removeAttribute('aria-current');
+        slides[n].classList.add('is-active');
+        dots[n].setAttribute('aria-current', 'true');
+        cur = n;
       });
     }
-    function schedule(){ clearTimeout(timer); timer = setTimeout(next, DELAY); }
-    function start(){ if (!document.hidden) schedule(); }
-    document.addEventListener('visibilitychange', function(){ if (document.hidden) clearTimeout(timer); else schedule(); });
-    if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
+    function schedule(){
+      clearTimeout(timer);
+      if (reduce || document.hidden) return;
+      timer = setTimeout(function(){ show((cur + 1) % slides.length); schedule(); }, DELAY);
+    }
+    document.addEventListener('visibilitychange', schedule);
+    if (document.readyState === 'complete') schedule(); else window.addEventListener('load', schedule);
   })();
   // video d'accueil : le lecteur YouTube (youtube-nocookie) ne se charge qu'au clic
   document.querySelectorAll('.video-frame').forEach(function(box){
