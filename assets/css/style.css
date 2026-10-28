@@ -382,7 +382,6 @@ a.ecard:hover{background:var(--cream-2);}
 .video-play svg{width:34px;height:34px;margin-left:4px;}
 .video-play:hover,.video-play:focus-visible{background:#fff;color:var(--ink);transform:scale(1.06);}
 .video-play:focus-visible{outline:2px solid #fff;outline-offset:4px;}
-.video-note{text-align:center;font-size:12px;color:var(--ink-soft);margin:14px 0 0;}
 @media (max-width:640px){.video-section{padding:64px 0 56px;}.video-play{width:62px;height:62px;margin:-31px 0 0 -31px;}.video-play svg{width:26px;height:26px;}}
 
 /* hero d'accueil : carrousel en fondu enchaîné (images chargées au fur et à mesure par main.js) */
