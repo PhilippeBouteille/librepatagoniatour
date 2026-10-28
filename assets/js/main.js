@@ -29,10 +29,6 @@
     }
     function go(i){ cur = (i + n) % n; render(); }
 
-    var prevBtn = sec.querySelector('.arrow.prev');
-    var nextBtn = sec.querySelector('.arrow.next');
-    if (prevBtn) prevBtn.addEventListener('click', function(){ go(cur-1); });
-    if (nextBtn) nextBtn.addEventListener('click', function(){ go(cur+1); });
     dots.forEach(function(d){ d.addEventListener('click', function(){ go(parseInt(d.getAttribute('data-goto'),10)); }); });
     render();
   });
