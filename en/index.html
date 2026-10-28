@@ -32,6 +32,7 @@
 <link rel="alternate" hreflang="en" href="https://librepatagoniatour.cl/en/index.html">
 <link rel="alternate" hreflang="pt" href="https://librepatagoniatour.cl/pt/index.html">
 <link rel="alternate" hreflang="x-default" href="https://librepatagoniatour.cl/index.html">
+<link rel="preload" as="image" href="/assets/images/hero/home-1.jpg" fetchpriority="high">
 </head>
 <body>
 <header>
@@ -48,7 +49,13 @@
   </div>
 </header>
 <section class="hero">
-  <div class="hero-bg" style="background-image:url('/assets/images/hero.jpg')"></div>
+  <div class="hero-bg hero-slides" aria-hidden="true">
+    <div class="hero-slide is-active" style="background-image:url('/assets/images/hero/home-1.jpg');background-position:center 45%"></div>
+    <div class="hero-slide" data-bg="/assets/images/hero/home-2.jpg" style="background-position:center 50%"></div>
+    <div class="hero-slide" data-bg="/assets/images/hero/home-3.jpg" style="background-position:center 40%"></div>
+    <div class="hero-slide" data-bg="/assets/images/hero/home-4.jpg" style="background-position:center 40%"></div>
+    <div class="hero-slide" data-bg="/assets/images/hero/home-5.jpg" style="background-position:center 50%"></div>
+  </div>
   <div class="hero-inner">
     <h1>Live<br>the Magic<br>of Patagonia.</h1>
     <p>Exclusive routes along the Carretera Austral, from North to South.</p>

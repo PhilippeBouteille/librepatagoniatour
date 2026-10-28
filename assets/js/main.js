@@ -126,6 +126,32 @@
     document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setOpen(false); });
     window.addEventListener('resize', function(){ if (window.innerWidth > 860) setOpen(false); });
   })();
+  // hero d'accueil : carrousel en fondu enchaîné ; la première image est dans le HTML, les autres se chargent ensuite
+  (function(){
+    var slides = Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
+    if (slides.length < 2) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var cur = 0, timer = null, DELAY = 6500;
+    function load(slide, cb){
+      var src = slide.getAttribute('data-bg');
+      if (!src) { cb(); return; }
+      var im = new Image();
+      im.onload = function(){ slide.style.backgroundImage = "url('" + src + "')"; slide.removeAttribute('data-bg'); cb(); };
+      im.onerror = function(){ cb(true); };
+      im.src = src;
+    }
+    function next(){
+      var n = (cur + 1) % slides.length;
+      load(slides[n], function(err){
+        if (!err) { slides[cur].classList.remove('is-active'); slides[n].classList.add('is-active'); cur = n; }
+        schedule();
+      });
+    }
+    function schedule(){ clearTimeout(timer); timer = setTimeout(next, DELAY); }
+    function start(){ if (!document.hidden) schedule(); }
+    document.addEventListener('visibilitychange', function(){ if (document.hidden) clearTimeout(timer); else schedule(); });
+    if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
+  })();
   // video d'accueil : le lecteur YouTube (youtube-nocookie) ne se charge qu'au clic
   document.querySelectorAll('.video-frame').forEach(function(box){
     var btn = box.querySelector('.video-play');
